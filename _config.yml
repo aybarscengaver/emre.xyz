@@ -1,0 +1,10 @@
+# Site settings
+title: Aybars Cengaver
+email: blog@aybarscengaver.com
+description: "a personel development blog"
+baseurl: ""
+url: "http://aybarscengaver.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
