@@ -1,11 +1,21 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Hakkimda
+permalink: /hakkimda/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Bana anamın babamın verdiği isim emre yılmaz. Lakin verdikleri bu güzel isim, soyismi yılmaz olan binlerce kişinin daha aklına gelmiş olacak ki her tanıdığım insanın en azından bir tane emre yılmaz adında tanıdığı bir insan mevcut. O kadar güzel o kadar popüler bir isim yani.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+İsmimi sevmediğimden değil, sadece bir dönem freelance çalıştığım için, insanların da google arama sonuçlarından bana ismimle ulaşması çok sorun oluyordu. Bu sebeple hiç kimsenin aklına gelmeyeceğini düşündüğüm bir abuk isimle kendime aybars cengaver deme kararı aldım ve bu isim bana yapıştı. Kime sorsanız beni aybars cengaver olarak bilir ancak adım emre yılmaz.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+PHP ile web projeleri geliştiriyorum Atölye15'de. Atölye15 güzel İzmir'imin en güzel yazılım atölyesidir benim için. 8 yıldır zilyon firmada çalıştıktan sonra ömrümü devam ettireceğim yer olarak Atölye15'den daha iyi bir yer yok bana göre.
+
+PHP dışında diğer dilleri de çok seviyor olsam bile, bir türlü kopamıyorum güzelim PHP'den. PHP'yi Symfony2 ile güzel güzel kullanıyorum. Haricen javascripti angular ile yazmayı severim.
+
+Bir adet macbook, bir adet iphone5s , bir adet ipad3 sahibi olsam da bir macfag değilim. Uzun zaman linux kullandıktan sonra kararlılığından ötürü apple ailesini tercih ettim.
+
+Bunlar dışında şiir yazmayı, okumayı severim ancak bir şair denecek kadar güzel şiirler yazamadığım aşikar.
+
+Kişisel olarak yaşadığım kafayı merak edenler [tumblr](http://blog.aybarscengaver.com) hesabımı kolaçan edebilirler.
+
+Bana ulaşmak için [facebook](http://fb.me/delirehberi), [twitter](http://twitter.com/aybarscengaver) hesaplarımı yada [mail](mailto:e@emre.xyz) adresimi kullanabilirsiniz.

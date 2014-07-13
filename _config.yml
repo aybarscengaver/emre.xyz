@@ -1,9 +1,10 @@
 # Site settings
-title: Aybars Cengaver
-email: blog@aybarscengaver.com
-description: "a personel development blog"
+title: Emre YILMAZ
+email: e@emre.xyz
+description: "very personal blog of aybars cengaver"
 baseurl: ""
-url: "http://aybarscengaver.com"
+url: "http://emre.xyz"
+username: aybarscengaver
 
 # Build settings
 markdown: kramdown

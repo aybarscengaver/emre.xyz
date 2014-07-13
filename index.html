@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  <h1>İçerikler</h1>
+  <h1>Yazılar</h1>
 
   <ul class="posts">
     {% for post in site.posts %}
@@ -15,6 +15,6 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">takip <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
 
 </div>
