@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "TC Kimlik NO`dan Adres Bulma"
-date:   2013-07-14
+date:   2014-11-17
 categories: genel
 ---
 
