@@ -9,3 +9,4 @@ username: aybarscengaver
 # Build settings
 markdown: kramdown
 permalink: pretty
+pygments: highlighter

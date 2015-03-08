@@ -13,18 +13,19 @@ Smarty tema motoru ile ilgili bu anlatıda smarty modifier mantığını ve nas�
 
 Smarty tema motoru ile kullanılan, basit php işlemlerini yapmayı sağlayan fonksiyonlardır.
 
-Modifier denen fonksiyonlar smarty ile tpl dosyaların içinde çok basitce | (pipe) işaretiyle kullanılabilir. Örneğin bir integer değişkeni 2 ile çarpmak için yazılan bir modifier kullanılırken {$deger|carpma:2} şeklinde basit bir yöntem uygulanabilir. $deger diye belirtilen değişkenin 4 olduğunu düşünürsek, hemen yanına | (pipe) ile iliştirilmiş olan modifier adına göre -ki burada carpma adında bir modifier kullandık- işleme tabi tutar. $deger adlı değişken modifier’a ilk parametre olarak gider. Modifier adından sonra iki nokta ile belirtilen değişken ise ikinci parametre olarak modifier’a gönderilir. İki nokta işaretlerini kullanarak istenildiği kadar değer gönderilip, modifier üzerinden yakalanabilir.
+Modifier denen fonksiyonlar smarty ile tpl dosyaların içinde çok basitce \| (pipe) işaretiyle kullanılabilir. Örneğin bir integer değişkeni 2 ile çarpmak için yazılan bir modifier kullanılırken {$deger\|carpma:2} şeklinde basit bir yöntem uygulanabilir. $deger diye belirtilen değişkenin 4 olduğunu düşünürsek, hemen yanına \| (pipe) ile iliştirilmiş olan modifier adına göre -ki burada carpma adında bir modifier kullandık- işleme tabi tutar. $deger adlı değişken modifier’a ilk parametre olarak gider. Modifier adından sonra iki nokta ile belirtilen değişken ise ikinci parametre olarak modifier’a gönderilir. İki nokta işaretlerini kullanarak istenildiği kadar değer gönderilip, modifier üzerinden yakalanabilir.
 
 Örnek olarak yazmak gerekirse :
 
-```
+
+{% highlight php %}
+<?php
 function smarty_modifier_carpma($deger,$carpilacak_sayi) {
-$sonuc = $deger*$carpilacak_sayi;
-return $sonuc;
+	$sonuc = $deger*$carpilacak_sayi;
+	return $sonuc;
 }
 
-?>
-```
+{% endhighlight %}
 
 Görüldüğü gibi fazlasıyla basit. Dikkat edilmesi gereken tek şey, modifier’ı tanımlarken yazım kuralına dikkat edip, smarty_modifier_modifieradi şeklinde isimlendirmektir. Bir diğer dikkat edilecek husus ise istenen değeri yazdırmayarak return etmek gerektiğidir.
 

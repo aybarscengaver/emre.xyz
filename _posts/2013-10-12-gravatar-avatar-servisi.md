@@ -19,13 +19,15 @@ Tüm harfleri küçük boy yapın (strtolower)
 Elinizdeki temiz veriyi md5 formatına çevirin(md5)
 
 
-``` <?php $email='test@gmail.com';
+{% highlight php %}
+<?php 
+$email='test@gmail.com';
 $url = 'http://www.gravatar.com/avatar/';
 $hash = md5(strtolower(trim($email)));
 $image = $url.$hash;
- echo "<img src='{$image}'/>";
+echo "<img src='{$image}'/>";
 ?>
- ```
+{% endhighlight %}
 
 Gördüğünüz üzere bu şekilde gravatar üzerindeki test@gmail.com üzerindeki mail adresine tanımlı avatarı çekmiş olduk. Avatar boyutu ön tanımlı olarak 80px olacaktır. Eğer avatar boyutunu değiştirmek isterseniz adres sonuna ?s= parametresine boyut vermeniz yeterlidir. http://www.gravatar.com/avatar/e4e0baaebb52de68319ade9e0865bbb6?s=40Artık 40px boyutunda bir avatar döndürülecektir. Boyut dışında 2 değer daha gönderebilirsiniz.
 

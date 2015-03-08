@@ -26,10 +26,13 @@ Uygulayacağımız mantık çok basit.
 
 Kodlarla anlatmak gerekirse .
 
-```
+
+{% highlight php %}
+<?php
 $request = $_SERVER['REQUEST_URI']; //adım 1
 $file_name = md5($request); //adım 2
-$file = $_SERVER['DOCUMENT_ROOT'].'/cache/'.$file_name; //unutma dosyanın mantıklı bir yerde olması lazım. ve chmod ayarı 777 olsun.
+$file = $_SERVER['DOCUMENT_ROOT'].'/cache/'.$file_name;
+ //unutma dosyanın mantıklı bir yerde olması lazım. ve chmod ayarı 777 olsun.
 if(is_file($file)){ //adım 3
     (int)$create_time = filectime($file);//adım 9
     (int)$time = time(); //şimdiki zaman adım 9
@@ -50,9 +53,9 @@ $full_page = ob_get_contents(); //adım 5
 $fopen = fopen($file,'w+'); //adım 5
 fwrite($fopen,$full_page); //adım 5
 echo '';
-
 ?>
-```
+
+{% endhighlight %}
 
 İş arasında bu kadar hızlı oluyor ancak.
 
