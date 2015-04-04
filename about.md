@@ -1,18 +1,18 @@
 ---
 layout: page
-title: Hakkimda
+title: Hakkımda
 permalink: /hakkimda/
 ---
- 
+
 Bana anamın babamın verdiği isim emre yılmaz. Lakin verdikleri bu güzel isim, soyismi yılmaz olan binlerce kişinin daha aklına gelmiş olacak ki her tanıdığım insanın en azından bir tane emre yılmaz adında tanıdığı bir insan mevcut. O kadar güzel o kadar popüler bir isim yani.
 
 İsmimi sevmediğimden değil, sadece bir dönem freelance çalıştığım için, insanların da google arama sonuçlarından bana ismimle ulaşması çok sorun oluyordu. Bu sebeple hiç kimsenin aklına gelmeyeceğini düşündüğüm bir abuk isimle kendime aybars cengaver deme kararı aldım ve bu isim bana yapıştı. Kime sorsanız beni aybars cengaver olarak bilir ancak adım emre yılmaz.
 
-PHP ile web projeleri geliştiriyorum [Okul Bilişim](http://okulbilisim.com)'de. 
+PHP ile web projeleri geliştiriyorum [Okul Bilişim](http://okulbilisim.com)'de.
 
-PHP dışında diğer dilleri de çok seviyor olsam bile, bir türlü kopamıyorum güzelim PHP'den. PHP'yi Symfony2 ile güzel güzel kullanıyorum. Haricen javascripti angular ile yazmayı severim.
+PHP dışında diğer dilleri de çok seviyor olsam bile, bir türlü kopamıyorum güzelim PHP'den. PHP'yi Symfony2 ile güzel güzel kullanıyorum. Haricen javascript, html, css ile ilgiliyim. Bunları da coffeescript, lesscss, haml gibi yardımcılarla yapmayı severim.
 
-Bir adet macbook, bir adet iphone5s , bir adet ipad3 sahibi olsam da bir macfag değilim. Uzun zaman linux kullandıktan sonra kararlılığından ötürü apple ailesini tercih ettim.
+Geliştirme ortamım OSX, kullandığım ide PHPStorm, editör ise Atom.
 
 Bunlar dışında şiir yazmayı, okumayı severim ancak bir şair denecek kadar güzel şiirler yazamadığım aşikar.
 

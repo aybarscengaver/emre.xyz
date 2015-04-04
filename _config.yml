@@ -8,5 +8,7 @@ username: aybarscengaver
 
 # Build settings
 markdown: kramdown
-permalink: pretty
-pygments: highlighter
+#permalink: pretty
+highlighter: pygments
+paginate: 5
+paginate_path: "/sayfa:num"

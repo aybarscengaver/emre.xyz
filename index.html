@@ -4,17 +4,33 @@ layout: default
 
 <div class="home">
 
-  <h1>Yazılar</h1>
+  <h1>Bunları Yazdım</h1>
 
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-date">{{ post.date|date: '%m/%d/%Y') }} </span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <br>
+        <em style="font-size:11px"> okumak {{post.content|reading_time}} sürecek</em>
       </li>
     {% endfor %}
   </ul>
-
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">Öncekiler</a>
+    {% else %}
+      <span class="previous">Öncekiler</span>
+    {% endif %}
+    <span class="page_number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Sonrakiler</a>
+    {% else %}
+      <span class="next ">Sonrakiler</span>
+    {% endif %}
+  </div>
+  <br>
   <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
 
 </div>
