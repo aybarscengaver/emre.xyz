@@ -4,7 +4,7 @@ email: e@emre.xyz
 description: "very personal blog of aybars cengaver"
 baseurl: ""
 url: "http://emre.xyz"
-username: aybarscengaver
+username: delirehberi
 
 # Build settings
 markdown: kramdown
