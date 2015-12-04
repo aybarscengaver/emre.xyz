@@ -12,7 +12,6 @@ layout: default
         <span class="post-date">{{ post.date|date: '%m/%d/%Y') }} </span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <br>
-        <em style="font-size:11px"> okumak {{post.content|reading_time}} sürecek</em>
       </li>
     {% endfor %}
   </ul>

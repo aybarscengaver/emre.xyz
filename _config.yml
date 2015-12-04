@@ -12,3 +12,10 @@ markdown: kramdown
 highlighter: pygments
 paginate: 5
 paginate_path: "/sayfa:num"
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
+
+- jekyll-feed
