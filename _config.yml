@@ -17,4 +17,5 @@ gems:
 - jemoji
 - jekyll-redirect-from 
 - jekyll-paginate
+- jekyll-sitemap
 - jekyll-feed
