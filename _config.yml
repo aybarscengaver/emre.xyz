@@ -9,7 +9,7 @@ username: delirehberi
 # Build settings
 markdown: kramdown
 #permalink: pretty
-highlighter: pygments
+highlighter: rouge
 paginate: 5
 paginate_path: "/sayfa:num"
 gems:
