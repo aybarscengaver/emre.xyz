@@ -1,7 +1,7 @@
 # Site settings
 title: Emre YILMAZ
 email: e@emre.xyz
-description: "very personal blog of aybars cengaver"
+description: "very personal blog of emre yilmaz"
 baseurl: ""
 url: "http://emre.xyz"
 username: delirehberi
@@ -9,7 +9,7 @@ username: delirehberi
 # Build settings
 markdown: kramdown
 #permalink: pretty
-highlighter: pygments
+highlighter: rouge
 paginate: 5
 paginate_path: "/sayfa:num"
 gems:
@@ -17,4 +17,5 @@ gems:
 - jemoji
 - jekyll-redirect-from 
 - jekyll-paginate
+- jekyll-sitemap
 - jekyll-feed
