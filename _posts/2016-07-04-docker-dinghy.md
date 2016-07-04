@@ -2,7 +2,6 @@
 title: Docker - Dinghy
 date: '2016-07-04 05:07:00'
 layout: post
-draft: true
 ---
 # Dinghy ile Docker
 Dinghy codekitchen kişisinin yazdığı, macOs üzerinde Docker kullanmayı daha keyifli hale getiren bir araç.
