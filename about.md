@@ -3,12 +3,11 @@ title: Hakkımda
 layout: page
 permalink: "/hakkimda/"
 ---
+10+ yıldır PHP ile web uygulamaları geliştiriyorum. PHP haricinde anahtar kelimelerim şunlardan oluşuyor: go, html, javascript, nodejs, css, wordpress, symfony.  
 
-PHP ile web projeleri geliştiriyorum [Okul Bilişim](http://okulbilisim.com)'de.
+Şu anda bir yandan İstanbul'da bir yazılım ekibiyle beraber çeşitli projeler geliştirip, diğer taraftan ortağı olduğum [Eres Biyoteknoloji](http://www.eresbiotech.com)'de CTO olarak görev yapıyorum.  
 
-PHP dışında diğer dilleri de çok seviyor olsam bile, bir türlü kopamıyorum güzelim PHP'den. PHP'yi Symfony2 ile güzel güzel kullanıyorum. Haricen javascript, html, css ile ilgiliyim. Bunları da coffeescript, lesscss, haml gibi yardımcılarla yapmayı severim.
-
-Geliştirme ortamım OSX, kullandığım ide PHPStorm, editör ise Vim.
+Geliştirme ortamım Ubuntu Mate, kullandığım ide JetBrains ürünleri, editör ise Vim.
 
 Bunlar dışında şiir yazmayı, okumayı severim ancak bir şair denecek kadar güzel şiirler yazamadığım aşikar.
 
