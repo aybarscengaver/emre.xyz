@@ -1,21 +1,511 @@
----
-layout: none
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Emre YILMAZ - @delirehberi</title>
+    <description>kişisel günce</description>
+    <link>http://emre.xyz/</link>
+    <atom:link href="http://emre.xyz/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        <title>Demokrasi</title>
+        <description>&lt;h1 id=&quot;demokrasi&quot;&gt;Demokrasi&lt;/h1&gt;
+&lt;p&gt;Uzun zamandır, üzerine uzun uzun düşündüğüm ve destekleyicilerini anlayamadığım yönetim biçimidir.
+Kısaca demokrasi; “Dahili olan tüm bireylerin, işleyişte eşit rol hakkı” olarak tanımlanabilir. Eğer bu bi devletse, tüm vatandaşların devlet yönetiminde söz hakkı olması, yok eğer bir şirketse, tüm çalışanların şirket idaresinde söz hakkı bulunması.&lt;/p&gt;
+
+&lt;p&gt;2 demokrasi teorisi mevcut, Normatif ve Ampirik demokrasi teorisi.&lt;/p&gt;
+
+&lt;h4 id=&quot;normatif-demokrasi-teorisi&quot;&gt;Normatif Demokrasi Teorisi&lt;/h4&gt;
+&lt;p&gt;Bu teoriye göre, sonuç tüm katılımcıları tam anlamıyla memnun etmelidir. Devlet için konuşursak: Cumhurbaşkanı seçiminde her bireyin sonuçtan memnun olması diyebiliriz.
+Ve farkedeceğiniz üzere, insanların “farklılıkları” sebebiyle hiç bir zaman tam katılımlı memnuniyet sağlanamayacaktır. Bu sebeple ütopik bir teoridir.&lt;/p&gt;
+
+&lt;h4 id=&quot;ampirik-demokrasi-teorisi&quot;&gt;Ampirik Demokrasi Teorisi&lt;/h4&gt;
+
+&lt;p&gt;Robert Dahl’ın deyimiyle “Poliarşi”. Normatif demokrasi teorisine mümkün olan en yakın şekilde duran teoridir. Yani olabildiğince fazla katılımcıyı memnun eden sonuçlarla çalışan bir sistem. Örneğin: %52
+Şu anda Türkiye Cumhuriyeti ve diğer demokratik devletlerin uyguladığı yöntemdir.
+Yani ilk bakışta ben şunu görüyorum. “Bizim bi fikrimiz var, ama tam da uyduramadık. Çok güzel birşey ama bi türlü &lt;code class=&quot;highlighter-rouge&quot;&gt;stable&lt;/code&gt; sürüm çıkartamadık. &lt;code class=&quot;highlighter-rouge&quot;&gt;BugFix&lt;/code&gt; yapalım derken de &lt;code class=&quot;highlighter-rouge&quot;&gt;feature&lt;/code&gt; eksilttik. Çok da iyi oldu, güzel oldu.” demiş adamlar.&lt;/p&gt;
+
+&lt;p&gt;Demokrasinin biraz daha detayına inince “Demokrasi Modelleri” çıkıyor. Klasik, koruyucu, kalkınmacı, liberal, sosyal demokrasi modelleri var. Sadece klasik demokrasiyi de aktarıp derdimi anlatacağım:
+Klasik Demokrasi&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Atina Demokrasisi&lt;/code&gt; diyorlar buna. Zaten bütün iş bunun başından çıkıyor. Fi tarihinde, Atina köylükten, kentliğe terfi edip, vatandaş sayısı 300–350bin civarlarına ulaşacağa yakın, bi şeyler yapmak gerekmiş. Arkadaşlar birleşip “Demokrasi” uygulayalım herkes mutlu mesut olsun demişler. &lt;code class=&quot;highlighter-rouge&quot;&gt;Doğrudan demokrasi&lt;/code&gt; alt türünde olan “tüm bireylerin, temsilcisiz, direk olarak katılımı” ile gerçekleşen demokrasi yöntemini müthiş şekilde uygulamışlar.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Tüm yurttaşlar eşittir” demiş Atinalılar.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Tabi doğrudan demokrasi dediğiniz şey vakit istiyor. Tüm yurttaşlar nasıl sağlıyorlar meclis katılımını?
+Tabi ki köleler, kadınlar ve yabancılar yurttaş sayılmıyor. Tüm işleri köleler yapınca, arkadaşların birşeylerle uğraşması lazım, herkes mebus oluyor bu sayede.&lt;/p&gt;
+
+&lt;p&gt;Alın size demokrasiyi sevmemek için bir neden daha. Demokrasi dediğiniz şey “&lt;strong&gt;doğru&lt;/strong&gt;”yu sağlamaz. Sadece eşitlik sağlamaya çalışır. Öğrendiğimiz üzere ise “&lt;strong&gt;eşitlik&lt;/strong&gt;” “&lt;strong&gt;adalet&lt;/strong&gt;” değildir.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Herkes eşittir ama bazıları daha eşittir”
+George Orwell&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Türkiye’de 100 yıldır demokrasi uygulamayı deniyoruz, dünyanın çeşitli yerlerinde deneniyor. Asla başarılı olamayacak olmasını anlamış olmalısınız.&lt;/p&gt;
+
+&lt;h3 id=&quot;peki-şirketler&quot;&gt;Peki şirketler?&lt;/h3&gt;
+
+&lt;p&gt;Demokrasi ile yönetilen bir şirket örneği var şuralarda bir yerde. Doğrudan demokrasi uygulanıyor. Çaycısından, insan kaynaklarına herkesin fikri alınıp şirket işleri yürütülüyor. Denemesi keyifli, peki ya sonuçları?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Çaycı alımını hiç çay içmeyen birine sormak ne kadar doğru?&lt;/li&gt;
+  &lt;li&gt;Ofise playstation alımını ofiste hiç durmayan müşteri temsilcisine sormak ne kadar doğru?&lt;/li&gt;
+  &lt;li&gt;Endüstri mühendisinin ne kadar maaş alacağını müşteri temsilcisine sormak ne kadar doğru?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Kısacası, insanların “öz”lerini unutup, tamamen objektif yaklaşacaklarını varsaymak ne kadar doğru? Her insan bencil değil mi ne de olsa?&lt;/p&gt;
+
+&lt;p&gt;Tabi bu durumda yetki puanı ataması yapılabilir, ancak yetki puanları “politik” yeteneğinden dolayı iş konusunda pek bilgisi olmayanlarda toplanması durumunda kaybedeceklerinizi ne kadar kaldırabilirsiniz?&lt;/p&gt;
+
+&lt;h2 id=&quot;ne-yapmalı&quot;&gt;Ne yapmalı?&lt;/h2&gt;
+&lt;p&gt;Ben biraz eski kafalıyım, “&lt;strong&gt;iyi&lt;/strong&gt;”, “&lt;strong&gt;lider&lt;/strong&gt;”, “&lt;strong&gt;dürüst&lt;/strong&gt;” gibi temel kalıplara uyan bir “&lt;em&gt;otorite&lt;/em&gt;”yi, yani bir “&lt;em&gt;patron&lt;/em&gt;”u, kaosa dönüşmesi muhtemel, “stable” olamamış bir demokrasiye tercih ederim.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 Jul 2016 05:12:00 +0000</pubDate>
+        <link>http://emre.xyz/2016/07/04/demokrasi.html</link>
+        <guid isPermaLink="true">http://emre.xyz/2016/07/04/demokrasi.html</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Docker - Dinghy</title>
+        <description>&lt;h1 id=&quot;dinghy-ile-docker&quot;&gt;Dinghy ile Docker&lt;/h1&gt;
+&lt;p&gt;Dinghy codekitchen kişisinin yazdığı, macOs üzerinde Docker kullanmayı daha keyifli hale getiren bir araç.&lt;/p&gt;
+
+&lt;p&gt;En sevdiğim tarafı, standart olarak vm providerların dosya paylaşımındaki yavaşlığı ortadan kaldırması. Yani host dediğimiz, kod yazdığımız makinamızdaki dosyaların sürekli olarak vm ile eşleştirilmesi olayı. Bu olay acayip can sıkıcı olabiliyor. Symfony ile development modda bir proje geliştirirken bomboş bir uygulamanın açılması 30–40 saniye sürebiliyordu normal Docker kurulumunda. Bunu aşmak için vmlere NFS desteği eklemek lazımdı. Bu iş bana biraz sancılı geldi açıkcası, tam Docker sevdamdan vazgeçmek üzereyken Dinghy ile karşılaştım. Hiç bir ayarla uğraşmama gerek kalmadan gayet hızlı çalışan bir enviroment sahibi oluverdim.&lt;/p&gt;
+
+&lt;p&gt;Diğer bir güzel tarafı dosyalarda yaptığınız değişiklikler, normal şartlarda bazen yakalanamayabiliyor. Bu da dosyanızın vm ile eşleştirilmeyeceği anlamına geliyor. Tabi ki bir sürü stabil çözümü var. Örneğin Dinghy kullanmadığımda atıl duran bir bilgisayara coreOs kurup &lt;code class=&quot;highlighter-rouge&quot;&gt;rsync&lt;/code&gt; ve &lt;code class=&quot;highlighter-rouge&quot;&gt;fsevents&lt;/code&gt; ile dosya eşleştirme olayını hızlıca çözmüştüm. Tabi bunu ayarlamak falan baya işti. Bu işi de ortadan kaldırdı Dinghy.&lt;/p&gt;
+
+&lt;p&gt;Benim pek kullanmadığım bir diğer artısı da, içerisinde bir DNS ve Http-Proxy ile beraber gelmesi. Bu sayede &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;servisid&amp;gt;.&amp;lt;projeid&amp;gt;.docker&lt;/code&gt; gibi bir url ile direk container içindeki servise ulaşmanızı sağlıyor. Ama bunu hala kendim ayarlamayı tercih ediyorum nedense. Siz de kullanmak istemezseniz &lt;code class=&quot;highlighter-rouge&quot;&gt;vim ~/.dinghy/preferences.yml&lt;/code&gt; dosyasına biz göz atın.&lt;/p&gt;
+
+&lt;h3 id=&quot;kullanım&quot;&gt;Kullanım&lt;/h3&gt;
+&lt;p&gt;Dinghy direk &lt;code class=&quot;highlighter-rouge&quot;&gt;brew&lt;/code&gt; ile kurulabiliyor. Önşartlar: bilgisayarınızda Docker ve Docker Toolbox kurulu olmalı. DockerMachine için bir vm provider bulunmalı. Virtualbox, vmware, parallels veya xhyve olabilir. Ben xhyve tercih ettim. Daha küçük daha tatlış.&lt;/p&gt;
+
+&lt;p&gt;İlk olarak &lt;code class=&quot;highlighter-rouge&quot;&gt;brew tap codekitchen/dinghy&lt;/code&gt; tap ı brew&lt;code class=&quot;highlighter-rouge&quot;&gt;e tanıtmak lazım. Ardından &lt;/code&gt;brew install dinghy` diyerek yüklenebiliyor.&lt;/p&gt;
+
+&lt;p&gt;Yükleme tamamlandıktan sonra :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-`&quot;&gt;dinghy create —-provider xhyve
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;diyerek bir vm oluşturmanız gerekiyor. Sonrasında &lt;code class=&quot;highlighter-rouge&quot;&gt;docker run -it redis&lt;/code&gt; diyerek container’ı başlatabilirsiniz.
+Ayrıca docker-compose kullanıyorsanız, hiç bir fark olmadan kullanmaya devam edebilirsiniz. &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-machine env machinename&lt;/code&gt; kullanımı yerine &lt;code class=&quot;highlighter-rouge&quot;&gt;dinghy env&lt;/code&gt; dediğinizde tüm docker değişkenleri export edilebiliyor.&lt;/p&gt;
+
+&lt;p&gt;Detaylı dökümantasyonu &lt;a href=&quot;https://github.com/codekitchen/dinghy&quot;&gt;github reposu&lt;/a&gt;ndan ulaşılabilir durumda.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 Jul 2016 05:07:00 +0000</pubDate>
+        <link>http://emre.xyz/2016/07/04/docker-dinghy.html</link>
+        <guid isPermaLink="true">http://emre.xyz/2016/07/04/docker-dinghy.html</guid>
+      </item>
+    
+      <item>
+        <title>Docker Nedir, Nasıl, Neden?</title>
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/DGVxpFeV16M&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+</description>
+        <pubDate>Sun, 03 Jul 2016 06:40:00 +0000</pubDate>
+        <link>http://emre.xyz/2016/07/03/docker-nedir-nasil-neden.html</link>
+        <guid isPermaLink="true">http://emre.xyz/2016/07/03/docker-nedir-nasil-neden.html</guid>
+      </item>
+    
+      <item>
+        <title>Symfony Giriş ve Kurulum</title>
+        <description>&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/9eqp6MXj_Bk&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Thu, 18 Feb 2016 00:00:00 +0000</pubDate>
+        <link>http://emre.xyz/genel,/symfony,/egitim,/video/2016/02/18/symfony-giris-kurulum.html</link>
+        <guid isPermaLink="true">http://emre.xyz/genel,/symfony,/egitim,/video/2016/02/18/symfony-giris-kurulum.html</guid>
+      </item>
+    
+      <item>
+        <title>Symfony3 Ne Getirdi?</title>
+        <description>&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/u98fymjg9MUUZ&quot; width=&quot;800&quot; height=&quot;600&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 18 Dec 2015 14:53:00 +0000</pubDate>
+        <link>http://emre.xyz/php/symfony/sunum/2015/12/18/whats-new-in-symfony3.html</link>
+        <guid isPermaLink="true">http://emre.xyz/php/symfony/sunum/2015/12/18/whats-new-in-symfony3.html</guid>
+      </item>
+    
+      <item>
+        <title>Symfony2 ile Widget Yapısı</title>
+        <description>&lt;p&gt;Elimden geldiğince yaptığım sistemlerin görünen kısımlarında (frontend) elemanları parçalamaya çabalarım. Widget olarak adlandırmayı 
+tercih ediyorum bu kısımları. Önceleri Symfony ile yaptığım projelerde twig dosyalarımda her parçayı render içinde controller çağırarak
+aşağıdaki şekilde parçalayarak, çakma bir widget yapısı oluşturuyordum.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;   &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'AddmeanAdvertBundle:Default:index'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;place: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;widget_docket_top&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Fakat bu durumda, performansı yerlere çekebiliyordum. Kendimce farklı bir yöntem oluşturmaya karar verdim. Widget olacak kısımları ayrı birer 
+servis olarak yazarsam daha performanslı olacağını, daha doğru bir yaklaşım olabileceğini düşündüm.&lt;/p&gt;
+
+&lt;p&gt;Uyguladığım yöntem ise, adımsal olarak şöyleydi;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Bir baseWidget abstract class`ımda tüm ortak işleri görüp, mecburi metodları belirledim.&lt;/li&gt;
+  &lt;li&gt;SiteBundle`ım içerisinde bir Widget klasörü açıp içerisine, her widget için bir sınıf oluşturup baseWidget sınıfımdan extend ederek gerekli ayarları yaptım.&lt;/li&gt;
+  &lt;li&gt;Bu widget`ları birer servis olarak tanımladım.&lt;/li&gt;
+  &lt;li&gt;Widget servislerimi twig içerisinde kullanabilecek bir twig extension yazdım.&lt;/li&gt;
+  &lt;li&gt;Tüm widgetları gerekli yerlere yerleştirdim.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Gereksiz hiç bir yük olmadan widget`larıma ulaşıp onları çalıştırabiliyorum artık. Kod örneklerine bakarak daha iyi anlayabileceğinizi düşünüyorum.&lt;/p&gt;
+
+&lt;h4 id=&quot;basewidget-sınıfım&quot;&gt;BaseWidget Sınıfım&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Addmean\MainBundle\Widget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Addmean\UserBundle\Manager\GroupManager&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Doctrine\ORM\EntityManager&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Base&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * @var \Twig_Environment
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$twig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * @var EntityManager
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * @var array
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;sd&quot;&gt;/** @var  GroupManager */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$gm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * @param EntityManager $em
+     * @param \Twig_Environment $twig
+     * @param GroupManager $gm
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__construct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;EntityManager&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;\Twig_Environment&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$twig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;GroupManager&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$gm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;em&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;twig&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$twig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;gm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$gm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * Rendered view
+     * @return string
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;twig&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * Twig file
+     * @return string
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * Data for passing twig file
+     * @return array
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * @param array $data
+     * @return void
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;array&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;Örnek-widget-sınıfım&quot;&gt;Örnek Widget Sınıfım&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SiteBundle\Widget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Addmean\MainBundle\Widget\Base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RecentNews&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Base&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * @inheritDoc
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;SiteBundle:Widget&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;RecentNews:view.html.twig&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * @inheritDoc
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;array&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;$group&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;gm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'group'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+
+        &lt;span class=&quot;nv&quot;&gt;$newsRepo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getRepository&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'AddmeanNewsBundle:News'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;$news&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$newsRepo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;findBy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'group'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'published'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'id'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'desc'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'limit'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'items'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$news&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'group'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;servis-tanımlama-Örneğim&quot;&gt;Servis Tanımlama Örneğim&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;widget.recent_news&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;SiteBundle\Widget\RecentNews&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@doctrine.orm.entity_manager&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@twig&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@addmean_group_manager&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;twig-extension-Örneği&quot;&gt;Twig Extension Örneği&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Addmean\MainBundle\Twig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Addmean\MainBundle\Widget\Base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Symfony\Component\DependencyInjection\ContainerInterface&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+
+&lt;span class=&quot;sd&quot;&gt;/**
+ * Class WidgetExtension
+ * @package Addmean\MainBundle\Twig
+ */&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;WidgetExtension&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;\Twig_Extension&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * @var ContainerInterface
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__construct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ContainerInterface&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;container&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * @return array
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getFilters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * @return array
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getFunctions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;\Twig_SimpleFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'widget'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'getWidget'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'is_safe'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'html'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getWidget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[])&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;sd&quot;&gt;/** @var Base $widget */&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;$widget&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'widget.'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;$widget&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$widget&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;sd&quot;&gt;/**
+     * @inheritDoc
+     */&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;widget_extension&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;ve-sonunda-kullandım&quot;&gt;Ve sonunda kullandım&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;widget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'recent_news'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;group: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'group'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;limit: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Sun, 30 Aug 2015 00:00:00 +0000</pubDate>
+        <link>http://emre.xyz/symfony2/widget/2015/08/30/symfony-widget.html</link>
+        <guid isPermaLink="true">http://emre.xyz/symfony2/widget/2015/08/30/symfony-widget.html</guid>
+      </item>
+    
+      <item>
+        <title>Sed ile bul ve değiştir</title>
+        <description>&lt;p&gt;Bu akşam büyük boyutlu bir veritabanında bul ve değiştir yapmam gerekti. Bi kaç sefer benzer dosyalarda değişiklik yapmak için sublime ile açıp, yüklenmesini bekliyordum 5-10dk civarı. Ara-Bul işlemi sırasında da baya bi sıkıntı yaşıyordum.&lt;/p&gt;
+
+&lt;p&gt;Sonra dedim ki:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hey adamım bu lanet olasıca işlem için neden sed kullanmıyorsun ?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Kullandım rahatladım.&lt;/p&gt;
+
+&lt;p&gt;Sed bir &lt;em&gt;S&lt;/em&gt;tream &lt;em&gt;Ed&lt;/em&gt;itor. Ben büyük bir veritabanı çıktısında veri değiştirmek için aşağıdaki şekilde kullandım. Tabi tek amacı bu değil.  Sed`i elinizdeki veriyi düzenlemek için kullanabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Bul ve değiştir işlemi şöyle oluyor efenim;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;   sed -i &lt;span class=&quot;s1&quot;&gt;'s/(regex)/g'&lt;/span&gt; dosya.sql&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;altnot:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;s: substitution - değiştir
+g: global - dosyanın heryerinde
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Mac için i parametresi farklı bir amaç güdüyor. Bunun yerine E parametresiyle dosyayı verin, i parametresi ise yedek dosyanızı alsın.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;   sed -i _bak -E &lt;span class=&quot;s1&quot;&gt;'s/echo/print/g'&lt;/span&gt; ~/command.md&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Sat, 29 Aug 2015 00:00:00 +0000</pubDate>
+        <link>http://emre.xyz/ipucu/2015/08/29/sed-ile-bul-ve-degistir-find-and-replace-with-sed.html</link>
+        <guid isPermaLink="true">http://emre.xyz/ipucu/2015/08/29/sed-ile-bul-ve-degistir-find-and-replace-with-sed.html</guid>
+      </item>
+    
+      <item>
+        <title>Symfony2 ve Doctrine ile ORM Yapısı</title>
+        <description>&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/BZh0ElwpB09ETT&quot; width=&quot;800&quot; height=&quot;600&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/AybarsCENGAVER/symfony2-doctrine&quot; title=&quot;Symfony2 &amp;amp; doctrine&quot; target=&quot;_blank&quot;&gt;Symfony2 &amp;amp; doctrine&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/AybarsCENGAVER&quot; target=&quot;_blank&quot;&gt;Aybars CENGAVER&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+</description>
+        <pubDate>Mon, 20 Apr 2015 00:00:00 +0000</pubDate>
+        <link>http://emre.xyz/sunum/symfony/doctrine/2015/04/20/symfony-doctrine.html</link>
+        <guid isPermaLink="true">http://emre.xyz/sunum/symfony/doctrine/2015/04/20/symfony-doctrine.html</guid>
+      </item>
+    
+      <item>
+        <title>OJS Open Journal Software - Açık Dergi Hizmetleri</title>
+        <description>&lt;p&gt;4 aydır &lt;a href=&quot;http://okulbilisim.com&quot;&gt;OkulBilişim&lt;/a&gt; bünyesinde çalışıyorum. Geliştirdiğimiz
+bir projeden bahsetmek istiyorum. Adından belli olduğu üzere online bir dergi
+yayınlama servisi olan &lt;a href=&quot;http://ojs.io&quot;&gt;Ojs.io&lt;/a&gt; projesinden bahsedeceğim.&lt;/p&gt;
+
+&lt;p&gt;4 Mart 2014  tarihinde başlayan proje şu anda hala geliştirme aşamasında olmasına
+rağmen güzel ilgi gördü. Hızla ilk release’i çıkartmaya çalışıyoruz.&lt;/p&gt;
+
+&lt;h3 id=&quot;nedir&quot;&gt;Nedir?&lt;/h3&gt;
+
+&lt;p&gt;OJS, kurumların, özel şirketlerin veya kişilerin, aylık - haftalık - yıllık
+döngülerde dergilerini yayınlayabilecekleri bir hizmet. OJS’yi farklı kılan şey
+ise inceleme süreci.&lt;/p&gt;
+
+&lt;p&gt;OJS’de önce kurumlar var, bu kurumlara ait dergiler. Derginizi oluşturduğunuzda
+isterseniz hemen içerik oluşturmaya başlayabiliyorsunuz. İsterseniz bir hakem
+heyeti oluşturarak, gönderilen her makalenin belli bir inceleme sürecinden
+geçmesini sağlayabiliyorsunuz. Bu süreç tamamiyle isteğe bağlı olarak güncellenebiliyor.&lt;/p&gt;
+
+&lt;p&gt;Makaleler hakemlerden geçtikten sonra editörlerinize ulaşıyor. Editörleriniz ise
+her adım gibi burada da servis üzerinden yeni bir sayı oluşturarak inceleme sürecini
+tamamlamış makaleleri derginin belirlenmiş bölümlerine ekleyip yayınlayabiliyorlar.&lt;/p&gt;
+
+&lt;p&gt;Bu proje ile tanışana kadar online dergi, hele de bilimsel dergilerin online inceleme
+sürecine fazlasıyla yabancıydım. Hala aşina sayılmam ancak eskisinden daha iyi
+durumda olduğumu düşünüyorum. Bilim dünyasına ne kadar katkı sağlayacağını daha
+iyi anlıyorum en azından.&lt;/p&gt;
+
+&lt;p&gt;### Amaç ?&lt;/p&gt;
+
+&lt;p&gt;OJS’nin temel amacı, bilimsel dergilerin yayınladıkları makalelerin güvenli ve
+doğru süreçleri izleyerek yayınlanması ve bilimsel makale kalitesinin artmasıdır.
+Şu anda halihazırda dergipark üzerinde bulunan PKPOjs’nin geliştirme sürecindeki
+sıkıntıları sebebiyle böyle bir servisi Symfony ile geliştirmek hem kod kalitesini
+fazlasıyla arttırdı, hem de performansı yükseltti.&lt;/p&gt;
+
+&lt;h3 id=&quot;neyle-&quot;&gt;Neyle ?&lt;/h3&gt;
+
+&lt;p&gt;OJS alt yapısında PHP 5.2 kullanır. Bunu da en ideal framework olarak gördüğümüz
+Symfony2.6 ile yapar. Arama kısmında ElasticSearch kullanır, istatistiksel verileri
+MongoDB üzerinde tutar. Veritabanı olarak ise PostgreSQL gibi bir yapıya tutunmuştur.&lt;/p&gt;
+
+&lt;h3 id=&quot;proje&quot;&gt;Proje&lt;/h3&gt;
+
+&lt;p&gt;Dediğim gibi projemiz hala geliştirme aşamasında, ancak incelemek isterseniz
+&lt;a href=&quot;http://github.com/okulbilisim/ojs&quot;&gt;github reposundan&lt;/a&gt; çekip bilgisayarınıza
+kurarak test edebilirsiniz. Aynı repo üzerinden destek olabilirsiniz ve herhangi
+bir hata görürseniz veya bir isteğiniz olursa &lt;a href=&quot;https://github.com/okulbilisim/ojs/issues&quot;&gt;issues&lt;/a&gt;
+kısmından bizimle paylaşabilirsiniz.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
+        <link>http://emre.xyz/genel/2015/04/02/ojs-open-journal-software.html</link>
+        <guid isPermaLink="true">http://emre.xyz/genel/2015/04/02/ojs-open-journal-software.html</guid>
+      </item>
+    
+      <item>
+        <title>GoLang</title>
+        <description>&lt;p&gt;Uzun zamandır hayat tantanasından dolayı yazamıyordum. Nişanlandım, Ankara’ya taşındım, işimi değiştirdim gibi durumlar.&lt;/p&gt;
+
+&lt;p&gt;Yeni yeni ilgilenmeye başladığım, aslında hobi olarak sadece araştırmakla yetindiğim bir yazılım dilinden bahsedeceğim. Genel olarak bahsedip, detaylar için kaynaklar paylaşacağım.&lt;/p&gt;
+
+&lt;h1 id=&quot;golang-nedir&quot;&gt;GoLang nedir?&lt;/h1&gt;
+
+&lt;p&gt;Açık kaynak olarak geliştirilen, basit, güvenilir ve verimli uygulamalar geliştirmeye yarayan, Python, C gibi dillerin güzel taraflarını alarak, hatalı taraflarını geride bırakarak geliştirilmiş derlenebilen bir yazılım dilidir.&lt;/p&gt;
+
+&lt;h1 id=&quot;ne-yapılabilir-&quot;&gt;Ne yapılabilir ?&lt;/h1&gt;
+
+&lt;p&gt;GoLang ile yazılımsal her türlü ihtiyaç giderilebilir. Geliştireceğiniz yazılıma uygun paketler dahil edilerek işlerinizi hızlıca çözebilirsiniz. Örneğin web uygulaması geliştirmek için dahili net/http paketini kullanarak işinizi görebilirsiniz. Web uygulamaları dışında, sistem programlamadan network programlamaya kadar her yazılım ihtiyacı GoLang ile giderilebilir.&lt;/p&gt;
+
+&lt;h1 id=&quot;nasıl-&quot;&gt;Nasıl ?&lt;/h1&gt;
+
+&lt;p&gt;Öncelikle kurulum dosyalarını &lt;a href=&quot;https://golang.org/dl/&quot;&gt;indirip&lt;/a&gt; /usr/local dizini içerisine aşağıdaki gibi açmanız gerekiyor.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Sonrasında PATH değişkeninizi aşağıdaki şekilde güncellemelisiniz.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export PATH=$PATH:/usr/local/go/bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ardından kurulumunuzu &lt;a href=&quot;https://github.com/aybarscengaver/hello-world/blob/master/hello-world.go&quot;&gt;hello-world&lt;/a&gt; dosyasını aşağıdaki gibi çalıştırarak test edebilirsiniz.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;go run hello-world.go
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Sonuç olarak &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello world!&lt;/code&gt; yazısını gördüğünüzde GoLang düzgün kurulmuş demektir.&lt;/p&gt;
+
+&lt;h1 id=&quot;sonuç&quot;&gt;Sonuç&lt;/h1&gt;
+
+&lt;p&gt;Bilgisayarınıza GoLang kurduktan sonra, GoLang ile uygulamalar geliştirebilirsiniz. Editör olarak sublime, vim yahut herhangi bir editör kullanabilirsiniz. Henüz stable bir GoLang idesi olduğunu bilmiyorum.&lt;/p&gt;
+
+&lt;p&gt;Vim kullanacaksanız &lt;a href=&quot;https://github.com/fatih&quot;&gt;Fatih&lt;/a&gt; `in &lt;a href=&quot;https://github.com/fatih/vim-go&quot;&gt;vim-go&lt;/a&gt; eklentisini kullanabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Eğer ilgilenmek ve daha detaylı incelemek isterseniz &lt;a href=&quot;http://tur.golang.org.tr/&quot;&gt;Türkçe Go Turu&lt;/a&gt;‘nu ziyaret edebilirsiniz. &lt;a href=&quot;http://tour.golang.org/welcome/1&quot;&gt;İngiliz Go Turu&lt;/a&gt;‘nu da incelemek isteyebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Web uygulamaları geliştirmek isterseniz &lt;a href=&quot;https://github.com/astaxie/build-web-application-with-golang/tree/master/tr&quot;&gt;Go ile web uygulaması geliştirme&lt;/a&gt; dökümanını okuyabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Sistem programlama için &lt;a href=&quot;https://github.com/astaxie/go-system-programming/tree/master/tr&quot;&gt;Go ile sistem programlama&lt;/a&gt; dökümanını inceleyebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gotr/gobyexample&quot;&gt;Örneklerle Go&lt;/a&gt; dökümanını incelemek ve çeviriye katkı sağlamak isteyebilirsiniz yahut &lt;a href=&quot;https://gobyexample.com/&quot;&gt;ingilizce sitesi&lt;/a&gt; üzerinde örnekleri uygulamaya başlayabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gotr/go-lang-cheat-sheet&quot;&gt;GoLang CheatSheet&lt;/a&gt;`i hızlıca göz atmak, veya syntax’ı hatırlamak için kullanabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Bunlar dışında web framework olarak &lt;a href=&quot;http://beego.me&quot;&gt;Beego&lt;/a&gt; veya &lt;a href=&quot;http://revel.github.io&quot;&gt;Revel&lt;/a&gt; kullanabilirsiniz. Ancak karşınıza çıkarsa bile kesinlikle &lt;a href=&quot;https://github.com/go-martini/martini&quot;&gt;Martini&lt;/a&gt; kullanmayın. Detaylı sebeleri &lt;a href=&quot;https://stephensearles.com/three-reasons-you-should-not-use-martini/&quot;&gt;şurada&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ayrıca herhangi bir sorunuz olursa &lt;a href=&quot;https://groups.google.com/forum/#!forum/golang-tr&quot;&gt;GoLang-tr google grubu&lt;/a&gt;`nu kullanabilirsiniz.&lt;/p&gt;
+
+&lt;h1 id=&quot;teşekkürler&quot;&gt;Teşekkürler&lt;/h1&gt;
+
+&lt;p&gt;Aklımdaki bilgileri dağınık da olsa paylaşmaya çalıştım. Yanlışım varsa affola.&lt;/p&gt;
+
+&lt;p&gt;Sağlıcakla&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 07 Mar 2015 00:00:00 +0000</pubDate>
+        <link>http://emre.xyz/genel/2015/03/07/Golang.html</link>
+        <guid isPermaLink="true">http://emre.xyz/genel/2015/03/07/Golang.html</guid>
+      </item>
+    
   </channel>
 </rss>
