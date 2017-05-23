@@ -13,7 +13,7 @@ Symfony yeni çıkartacağı sürümde bir sürü güzel özelliğin müjdesini 
 
 Bu sürümde ise 3.4 versiyonda bulunan tüm özellikler, deprecated olmuş özelliklerin temizliği ve programlamaya yeni bir yaklaşımla karşılacaksınız.
 
-Ayrıca Symfony 4.0 yapılan bir oylama sonucu PHP 7 den aşağısını desteklememe kararı aldı.
+Ayrıca Symfony 4.0 yapılan bir oylama sonucu PHP 7 (7.1.3) den aşağısını desteklememe kararı aldı.
 
 Symfony 4.0 öncesinde HHVM üzerinde symfony uygulamalarını sorunsuzca çalıştırabiliyorduk, ancak PHP 7'nin müthiş çıkışından sonra HHVM şu anda PHP'den geri kaldığı ve bazı özellikleri desteklemediği için Symfony 4.0 sürümünde HHVM desteği de kaldırılıyor.
 
