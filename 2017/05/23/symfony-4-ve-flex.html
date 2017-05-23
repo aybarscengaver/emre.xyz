@@ -1,0 +1,75 @@
+<p>Symfony hakkında yaptığım sunumlarda hep söylediğim gibi, Symfony PHP’nin gelişmesi için her daim çabalamış bir topluluk. Symfony sadece kendisi için birşeyler yapmayıp tüm PHP camiasının faydalanabileceği işler konusunda her zaman bir adım önde giden bir topluluk.</p>
+
+<h2 id="symfony-4">Symfony 4</h2>
+
+<p>Symfony yeni çıkartacağı sürümde bir sürü güzel özelliğin müjdesini vermeye başladı. Symfony 4 Kasım 2017 de stabil olarak sunulacak. Bir önceki sürümde 2.8 versiyonunda projeniz çalışıyor ve hiç deprecated uyarı almıyor idiyseniz çok ufak değişikliklerle tüm projenizi 3.0 versiyonuna taşıyabildiniz. Bu çoğu framework’ün bırakın yapmayı yanına yaklaşamadığı bir sürdürülebilirlik.</p>
+
+<p>Bu sürümde ise 3.4 versiyonda bulunan tüm özellikler, deprecated olmuş özelliklerin temizliği ve programlamaya yeni bir yaklaşımla karşılacaksınız.</p>
+
+<p>Ayrıca Symfony 4.0 yapılan bir oylama sonucu PHP 7 den aşağısını desteklememe kararı aldı.</p>
+
+<p>Symfony 4.0 öncesinde HHVM üzerinde symfony uygulamalarını sorunsuzca çalıştırabiliyorduk, ancak PHP 7’nin müthiş çıkışından sonra HHVM şu anda PHP’den geri kaldığı ve bazı özellikleri desteklemediği için Symfony 4.0 sürümünde HHVM desteği de kaldırılıyor.</p>
+
+<p>Symfony uygulamaları parameters.yml dosyasına bağımlılıktan <code class="highlighter-rouge">symfony/dotenv</code> sayesinde kurtulup tüm ayarları ortam değişkenlerinde ve/veya .env dosyalarında tutabilecek.</p>
+
+<p>App_dev ve App diye iki dosya ihtiyacı kalkıyor, tek bir başlatıcı (web/index.php) ortam değişkenlerine göre mod değiştirebilecek.</p>
+
+<p>TaskRunner olarak MakeFile kullanılacak.</p>
+
+<p>Yeni klasör yapısında ayarlar <code class="highlighter-rouge">etc/</code> şablonlar <code class="highlighter-rouge">templates/</code> klasörü içinde bulunacak.</p>
+
+<p>Ve en önemli bomba</p>
+
+<blockquote><p>"Dağıtımlar hatalı soyutlamalardır"</p></blockquote>
+
+<p>Yani artık symfony standard edition, symfony rest edition tarzı dağıtımlar olmayacak. Çünkü birinde başladığınızda diğerinize geçmeniz pek (hiç) kolay olmuyor. Ya birini, ya diğerini tamamen almanız gerekiyor, yahut tamamen custom birşey yapmanız gerekiyordu.</p>
+
+<h2 id="symfony-flex">Symfony Flex</h2>
+
+<p>Ve olan oldu. Flex bir composer eklentisi. Symfony 4.0 sürümünden sonra kullanabileceğimiz Flex ile beraber dağıtımlar kalkacak. Artık Symfony iskeletinde sadece iki bağımlılık olacak <code class="highlighter-rouge">symfony/flex</code> ve <code class="highlighter-rouge">symfony/framework-bundle</code>. Geri kalan herşey isteğe bağlı olacak. İlk bakışta işi zorlaştıracak sanabilirsiniz, ancak henüz Flex ne yapacak anlatmadım.</p>
+
+<p>Flex her bağımlılığınızı eklediğinizde yahut kaldırdığınızda, manuel olarak yaptığımız tüm işlemleri (config, routing, AppKernel vs) kendisi çözecek.</p>
+
+<p>Kısaca siz sadece composer require fos/user-bundle dediğinizde, gereken tüm öntanımlı ayarları, routeları ve gidip AppKernel’e eklediğimiz bundle’ı sınıfını vs kendisi yapacak. Müthiş değil mi?</p>
+
+<p>Otomasyonun dibine vuruyor Smyfony 4 ve Flex. Ama nasıl?</p>
+
+<p>Bundle geliştirdiğinizde flex için bir tarif (recipe) dosyası oluşturuyorsunuz. Bu tarifler SensioLabs tarafından kontrol edilecek bir sunucuda (flex.symfony.com) tutuluyor ve ihtiyaç duyulduğunda erişilebiliyor.</p>
+
+<p>Örnek tam tarif aşağıdaki gibi.</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"bundles"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"all"</span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"copy-from-recipe"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"etc/"</span><span class="p">:</span><span class="w"> </span><span class="s2">"%ETC_DIR%/"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"src/"</span><span class="p">:</span><span class="w"> </span><span class="s2">"%SRC_DIR%/"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"web/"</span><span class="p">:</span><span class="w"> </span><span class="s2">"%WEB_DIR%/"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"composer-scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"make cache-warmup"</span><span class="p">:</span><span class="w"> </span><span class="s2">"script"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"assets:install --symlink --relative %WEB_DIR%"</span><span class="p">:</span><span class="w"> </span><span class="s2">"symfony-cmd"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"env"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"APP_ENV"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dev"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"APP_DEBUG"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"APP_SECRET"</span><span class="p">:</span><span class="w"> </span><span class="s2">"%generate(secret)%"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"gitignore"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">".env"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"/var/"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"/vendor/"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"/web/bundles/"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+</div>
+
+<p>Ufak bir demoyu ise aşağıda görebilirsiniz</p>
+
+<iframe src="https://www.youtube.com/embed/o9N1nOYfAl4" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+
+<p>Daha fazla bilgi için <a href="https://medium.com/@fabpot">fabpot</a>‘un medium hesabını kurcalayabilir ve takip edebilirsiniz.</p>

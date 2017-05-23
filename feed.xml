@@ -7,6 +7,88 @@
     <atom:link href="http://emre.xyz/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Symfony 4 ve Flex</title>
+        <description>&lt;p&gt;Symfony hakkında yaptığım sunumlarda hep söylediğim gibi, Symfony PHP’nin gelişmesi için her daim çabalamış bir topluluk. Symfony sadece kendisi için birşeyler yapmayıp tüm PHP camiasının faydalanabileceği işler konusunda her zaman bir adım önde giden bir topluluk.&lt;/p&gt;
+
+&lt;h2 id=&quot;symfony-4&quot;&gt;Symfony 4&lt;/h2&gt;
+
+&lt;p&gt;Symfony yeni çıkartacağı sürümde bir sürü güzel özelliğin müjdesini vermeye başladı. Symfony 4 Kasım 2017 de stabil olarak sunulacak. Bir önceki sürümde 2.8 versiyonunda projeniz çalışıyor ve hiç deprecated uyarı almıyor idiyseniz çok ufak değişikliklerle tüm projenizi 3.0 versiyonuna taşıyabildiniz. Bu çoğu framework’ün bırakın yapmayı yanına yaklaşamadığı bir sürdürülebilirlik.&lt;/p&gt;
+
+&lt;p&gt;Bu sürümde ise 3.4 versiyonda bulunan tüm özellikler, deprecated olmuş özelliklerin temizliği ve programlamaya yeni bir yaklaşımla karşılacaksınız.&lt;/p&gt;
+
+&lt;p&gt;Ayrıca Symfony 4.0 yapılan bir oylama sonucu PHP 7 den aşağısını desteklememe kararı aldı.&lt;/p&gt;
+
+&lt;p&gt;Symfony 4.0 öncesinde HHVM üzerinde symfony uygulamalarını sorunsuzca çalıştırabiliyorduk, ancak PHP 7’nin müthiş çıkışından sonra HHVM şu anda PHP’den geri kaldığı ve bazı özellikleri desteklemediği için Symfony 4.0 sürümünde HHVM desteği de kaldırılıyor.&lt;/p&gt;
+
+&lt;p&gt;Symfony uygulamaları parameters.yml dosyasına bağımlılıktan &lt;code class=&quot;highlighter-rouge&quot;&gt;symfony/dotenv&lt;/code&gt; sayesinde kurtulup tüm ayarları ortam değişkenlerinde ve/veya .env dosyalarında tutabilecek.&lt;/p&gt;
+
+&lt;p&gt;App_dev ve App diye iki dosya ihtiyacı kalkıyor, tek bir başlatıcı (web/index.php) ortam değişkenlerine göre mod değiştirebilecek.&lt;/p&gt;
+
+&lt;p&gt;TaskRunner olarak MakeFile kullanılacak.&lt;/p&gt;
+
+&lt;p&gt;Yeni klasör yapısında ayarlar &lt;code class=&quot;highlighter-rouge&quot;&gt;etc/&lt;/code&gt; şablonlar &lt;code class=&quot;highlighter-rouge&quot;&gt;templates/&lt;/code&gt; klasörü içinde bulunacak.&lt;/p&gt;
+
+&lt;p&gt;Ve en önemli bomba&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&quot;Dağıtımlar hatalı soyutlamalardır&quot;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Yani artık symfony standard edition, symfony rest edition tarzı dağıtımlar olmayacak. Çünkü birinde başladığınızda diğerinize geçmeniz pek (hiç) kolay olmuyor. Ya birini, ya diğerini tamamen almanız gerekiyor, yahut tamamen custom birşey yapmanız gerekiyordu.&lt;/p&gt;
+
+&lt;h2 id=&quot;symfony-flex&quot;&gt;Symfony Flex&lt;/h2&gt;
+
+&lt;p&gt;Ve olan oldu. Flex bir composer eklentisi. Symfony 4.0 sürümünden sonra kullanabileceğimiz Flex ile beraber dağıtımlar kalkacak. Artık Symfony iskeletinde sadece iki bağımlılık olacak &lt;code class=&quot;highlighter-rouge&quot;&gt;symfony/flex&lt;/code&gt; ve &lt;code class=&quot;highlighter-rouge&quot;&gt;symfony/framework-bundle&lt;/code&gt;. Geri kalan herşey isteğe bağlı olacak. İlk bakışta işi zorlaştıracak sanabilirsiniz, ancak henüz Flex ne yapacak anlatmadım.&lt;/p&gt;
+
+&lt;p&gt;Flex her bağımlılığınızı eklediğinizde yahut kaldırdığınızda, manuel olarak yaptığımız tüm işlemleri (config, routing, AppKernel vs) kendisi çözecek.&lt;/p&gt;
+
+&lt;p&gt;Kısaca siz sadece composer require fos/user-bundle dediğinizde, gereken tüm öntanımlı ayarları, routeları ve gidip AppKernel’e eklediğimiz bundle’ı sınıfını vs kendisi yapacak. Müthiş değil mi?&lt;/p&gt;
+
+&lt;p&gt;Otomasyonun dibine vuruyor Smyfony 4 ve Flex. Ama nasıl?&lt;/p&gt;
+
+&lt;p&gt;Bundle geliştirdiğinizde flex için bir tarif (recipe) dosyası oluşturuyorsunuz. Bu tarifler SensioLabs tarafından kontrol edilecek bir sunucuda (flex.symfony.com) tutuluyor ve ihtiyaç duyulduğunda erişilebiliyor.&lt;/p&gt;
+
+&lt;p&gt;Örnek tam tarif aşağıdaki gibi.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;bundles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;all&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;copy-from-recipe&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;etc/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%ETC_DIR%/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;src/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%SRC_DIR%/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;web/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%WEB_DIR%/&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;composer-scripts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;make cache-warmup&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;script&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;assets:install --symlink --relative %WEB_DIR%&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;symfony-cmd&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;env&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;APP_ENV&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dev&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;APP_DEBUG&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;APP_SECRET&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%generate(secret)%&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;gitignore&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;.env&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/var/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/vendor/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/web/bundles/&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ufak bir demoyu ise aşağıda görebilirsiniz&lt;/p&gt;
+
+&lt;iframe src=&quot;https://www.youtube.com/embed/o9N1nOYfAl4&quot; allowfullscreen=&quot;&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Daha fazla bilgi için &lt;a href=&quot;https://medium.com/@fabpot&quot;&gt;fabpot&lt;/a&gt;‘un medium hesabını kurcalayabilir ve takip edebilirsiniz.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 23 May 2017 11:36:20 +0000</pubDate>
+        <link>http://emre.xyz/2017/05/23/symfony-4-ve-flex.html</link>
+        <guid isPermaLink="true">http://emre.xyz/2017/05/23/symfony-4-ve-flex.html</guid>
+      </item>
+    
+      <item>
         <title>Demokrasi</title>
         <description>&lt;h1 id=&quot;demokrasi&quot;&gt;Demokrasi&lt;/h1&gt;
 &lt;p&gt;Uzun zamandır, üzerine uzun uzun düşündüğüm ve destekleyicilerini anlayamadığım yönetim biçimidir.
@@ -437,74 +519,6 @@ kısmından bizimle paylaşabilirsiniz.&lt;/p&gt;
         <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
         <link>http://emre.xyz/genel/2015/04/02/ojs-open-journal-software.html</link>
         <guid isPermaLink="true">http://emre.xyz/genel/2015/04/02/ojs-open-journal-software.html</guid>
-      </item>
-    
-      <item>
-        <title>GoLang</title>
-        <description>&lt;p&gt;Uzun zamandır hayat tantanasından dolayı yazamıyordum. Nişanlandım, Ankara’ya taşındım, işimi değiştirdim gibi durumlar.&lt;/p&gt;
-
-&lt;p&gt;Yeni yeni ilgilenmeye başladığım, aslında hobi olarak sadece araştırmakla yetindiğim bir yazılım dilinden bahsedeceğim. Genel olarak bahsedip, detaylar için kaynaklar paylaşacağım.&lt;/p&gt;
-
-&lt;h1 id=&quot;golang-nedir&quot;&gt;GoLang nedir?&lt;/h1&gt;
-
-&lt;p&gt;Açık kaynak olarak geliştirilen, basit, güvenilir ve verimli uygulamalar geliştirmeye yarayan, Python, C gibi dillerin güzel taraflarını alarak, hatalı taraflarını geride bırakarak geliştirilmiş derlenebilen bir yazılım dilidir.&lt;/p&gt;
-
-&lt;h1 id=&quot;ne-yapılabilir-&quot;&gt;Ne yapılabilir ?&lt;/h1&gt;
-
-&lt;p&gt;GoLang ile yazılımsal her türlü ihtiyaç giderilebilir. Geliştireceğiniz yazılıma uygun paketler dahil edilerek işlerinizi hızlıca çözebilirsiniz. Örneğin web uygulaması geliştirmek için dahili net/http paketini kullanarak işinizi görebilirsiniz. Web uygulamaları dışında, sistem programlamadan network programlamaya kadar her yazılım ihtiyacı GoLang ile giderilebilir.&lt;/p&gt;
-
-&lt;h1 id=&quot;nasıl-&quot;&gt;Nasıl ?&lt;/h1&gt;
-
-&lt;p&gt;Öncelikle kurulum dosyalarını &lt;a href=&quot;https://golang.org/dl/&quot;&gt;indirip&lt;/a&gt; /usr/local dizini içerisine aşağıdaki gibi açmanız gerekiyor.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Sonrasında PATH değişkeninizi aşağıdaki şekilde güncellemelisiniz.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export PATH=$PATH:/usr/local/go/bin
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Ardından kurulumunuzu &lt;a href=&quot;https://github.com/aybarscengaver/hello-world/blob/master/hello-world.go&quot;&gt;hello-world&lt;/a&gt; dosyasını aşağıdaki gibi çalıştırarak test edebilirsiniz.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;go run hello-world.go
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Sonuç olarak &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello world!&lt;/code&gt; yazısını gördüğünüzde GoLang düzgün kurulmuş demektir.&lt;/p&gt;
-
-&lt;h1 id=&quot;sonuç&quot;&gt;Sonuç&lt;/h1&gt;
-
-&lt;p&gt;Bilgisayarınıza GoLang kurduktan sonra, GoLang ile uygulamalar geliştirebilirsiniz. Editör olarak sublime, vim yahut herhangi bir editör kullanabilirsiniz. Henüz stable bir GoLang idesi olduğunu bilmiyorum.&lt;/p&gt;
-
-&lt;p&gt;Vim kullanacaksanız &lt;a href=&quot;https://github.com/fatih&quot;&gt;Fatih&lt;/a&gt; `in &lt;a href=&quot;https://github.com/fatih/vim-go&quot;&gt;vim-go&lt;/a&gt; eklentisini kullanabilirsiniz.&lt;/p&gt;
-
-&lt;p&gt;Eğer ilgilenmek ve daha detaylı incelemek isterseniz &lt;a href=&quot;http://tur.golang.org.tr/&quot;&gt;Türkçe Go Turu&lt;/a&gt;‘nu ziyaret edebilirsiniz. &lt;a href=&quot;http://tour.golang.org/welcome/1&quot;&gt;İngiliz Go Turu&lt;/a&gt;‘nu da incelemek isteyebilirsiniz.&lt;/p&gt;
-
-&lt;p&gt;Web uygulamaları geliştirmek isterseniz &lt;a href=&quot;https://github.com/astaxie/build-web-application-with-golang/tree/master/tr&quot;&gt;Go ile web uygulaması geliştirme&lt;/a&gt; dökümanını okuyabilirsiniz.&lt;/p&gt;
-
-&lt;p&gt;Sistem programlama için &lt;a href=&quot;https://github.com/astaxie/go-system-programming/tree/master/tr&quot;&gt;Go ile sistem programlama&lt;/a&gt; dökümanını inceleyebilirsiniz.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/gotr/gobyexample&quot;&gt;Örneklerle Go&lt;/a&gt; dökümanını incelemek ve çeviriye katkı sağlamak isteyebilirsiniz yahut &lt;a href=&quot;https://gobyexample.com/&quot;&gt;ingilizce sitesi&lt;/a&gt; üzerinde örnekleri uygulamaya başlayabilirsiniz.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/gotr/go-lang-cheat-sheet&quot;&gt;GoLang CheatSheet&lt;/a&gt;`i hızlıca göz atmak, veya syntax’ı hatırlamak için kullanabilirsiniz.&lt;/p&gt;
-
-&lt;p&gt;Bunlar dışında web framework olarak &lt;a href=&quot;http://beego.me&quot;&gt;Beego&lt;/a&gt; veya &lt;a href=&quot;http://revel.github.io&quot;&gt;Revel&lt;/a&gt; kullanabilirsiniz. Ancak karşınıza çıkarsa bile kesinlikle &lt;a href=&quot;https://github.com/go-martini/martini&quot;&gt;Martini&lt;/a&gt; kullanmayın. Detaylı sebeleri &lt;a href=&quot;https://stephensearles.com/three-reasons-you-should-not-use-martini/&quot;&gt;şurada&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ayrıca herhangi bir sorunuz olursa &lt;a href=&quot;https://groups.google.com/forum/#!forum/golang-tr&quot;&gt;GoLang-tr google grubu&lt;/a&gt;`nu kullanabilirsiniz.&lt;/p&gt;
-
-&lt;h1 id=&quot;teşekkürler&quot;&gt;Teşekkürler&lt;/h1&gt;
-
-&lt;p&gt;Aklımdaki bilgileri dağınık da olsa paylaşmaya çalıştım. Yanlışım varsa affola.&lt;/p&gt;
-
-&lt;p&gt;Sağlıcakla&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 07 Mar 2015 00:00:00 +0000</pubDate>
-        <link>http://emre.xyz/genel/2015/03/07/Golang.html</link>
-        <guid isPermaLink="true">http://emre.xyz/genel/2015/03/07/Golang.html</guid>
       </item>
     
   </channel>
