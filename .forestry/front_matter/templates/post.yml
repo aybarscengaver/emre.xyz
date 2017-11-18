@@ -1,0 +1,18 @@
+---
+hide_body: false
+fields:
+- type: textarea
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+- type: textarea
+  name: content
+  label: content
+  config:
+    required: true
+    wysiwyg: true
+- type: tag_list
+  name: tags
+  label: tags
