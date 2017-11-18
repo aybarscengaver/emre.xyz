@@ -34,7 +34,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCef-j9u0IYllBZ955fCfa9A&quot; title=&quot;https://www.youtube.com/channel/UCef-j9u0IYllBZ955fCfa9A&quot;&gt;https://www.youtube.com/channel/UCef-j9u0IYllBZ955fCfa9A&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sat, 18 Nov 2017 18:08:27 +0000</pubDate>
+        <pubDate>Sat, 18 Nov 2017 21:08:27 +0300</pubDate>
         <link>http://emre.xyz/2017/11/18/takip-ettigim-youtube-kanallari.html</link>
         <guid isPermaLink="true">http://emre.xyz/2017/11/18/takip-ettigim-youtube-kanallari.html</guid>
       </item>
@@ -116,7 +116,7 @@
 
 &lt;p&gt;Daha fazla bilgi için &lt;a href=&quot;https://medium.com/@fabpot&quot;&gt;fabpot&lt;/a&gt;‘un medium hesabını kurcalayabilir ve takip edebilirsiniz.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 23 May 2017 11:36:00 +0000</pubDate>
+        <pubDate>Tue, 23 May 2017 11:36:00 +0300</pubDate>
         <link>http://emre.xyz/2017/05/23/symfony-4-ve-flex.html</link>
         <guid isPermaLink="true">http://emre.xyz/2017/05/23/symfony-4-ve-flex.html</guid>
       </item>
@@ -177,7 +177,7 @@ George Orwell&lt;/p&gt;
 &lt;h2 id=&quot;ne-yapmalı&quot;&gt;Ne yapmalı?&lt;/h2&gt;
 &lt;p&gt;Ben biraz eski kafalıyım, “&lt;strong&gt;iyi&lt;/strong&gt;”, “&lt;strong&gt;lider&lt;/strong&gt;”, “&lt;strong&gt;dürüst&lt;/strong&gt;” gibi temel kalıplara uyan bir “&lt;em&gt;otorite&lt;/em&gt;”yi, yani bir “&lt;em&gt;patron&lt;/em&gt;”u, kaosa dönüşmesi muhtemel, “stable” olamamış bir demokrasiye tercih ederim.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 04 Jul 2016 05:12:00 +0000</pubDate>
+        <pubDate>Mon, 04 Jul 2016 05:12:00 +0300</pubDate>
         <link>http://emre.xyz/2016/07/04/demokrasi.html</link>
         <guid isPermaLink="true">http://emre.xyz/2016/07/04/demokrasi.html</guid>
       </item>
@@ -208,7 +208,7 @@ Ayrıca docker-compose kullanıyorsanız, hiç bir fark olmadan kullanmaya devam
 
 &lt;p&gt;Detaylı dökümantasyonu &lt;a href=&quot;https://github.com/codekitchen/dinghy&quot;&gt;github reposu&lt;/a&gt;ndan ulaşılabilir durumda.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 04 Jul 2016 05:07:00 +0000</pubDate>
+        <pubDate>Mon, 04 Jul 2016 05:07:00 +0300</pubDate>
         <link>http://emre.xyz/2016/07/04/docker-dinghy.html</link>
         <guid isPermaLink="true">http://emre.xyz/2016/07/04/docker-dinghy.html</guid>
       </item>
@@ -218,7 +218,7 @@ Ayrıca docker-compose kullanıyorsanız, hiç bir fark olmadan kullanmaya devam
         <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/DGVxpFeV16M&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 </description>
-        <pubDate>Sun, 03 Jul 2016 06:40:00 +0000</pubDate>
+        <pubDate>Sun, 03 Jul 2016 06:40:00 +0300</pubDate>
         <link>http://emre.xyz/2016/07/03/docker-nedir-nasil-neden.html</link>
         <guid isPermaLink="true">http://emre.xyz/2016/07/03/docker-nedir-nasil-neden.html</guid>
       </item>
@@ -227,7 +227,7 @@ Ayrıca docker-compose kullanıyorsanız, hiç bir fark olmadan kullanmaya devam
         <title>Symfony Giriş ve Kurulum</title>
         <description>&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/9eqp6MXj_Bk&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </description>
-        <pubDate>Thu, 18 Feb 2016 00:00:00 +0000</pubDate>
+        <pubDate>Thu, 18 Feb 2016 00:00:00 +0200</pubDate>
         <link>http://emre.xyz/genel,/symfony,/egitim,/video/2016/02/18/symfony-giris-kurulum.html</link>
         <guid isPermaLink="true">http://emre.xyz/genel,/symfony,/egitim,/video/2016/02/18/symfony-giris-kurulum.html</guid>
       </item>
@@ -238,7 +238,7 @@ Ayrıca docker-compose kullanıyorsanız, hiç bir fark olmadan kullanmaya devam
 &lt;div style=&quot;margin-bottom:5px&quot;&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Fri, 18 Dec 2015 14:53:00 +0000</pubDate>
+        <pubDate>Fri, 18 Dec 2015 14:53:00 +0200</pubDate>
         <link>http://emre.xyz/php/symfony/sunum/2015/12/18/whats-new-in-symfony3.html</link>
         <guid isPermaLink="true">http://emre.xyz/php/symfony/sunum/2015/12/18/whats-new-in-symfony3.html</guid>
       </item>
@@ -448,7 +448,7 @@ servis olarak yazarsam daha performanslı olacağını, daha doğru bir yaklaş�
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;widget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'recent_news'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;group: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'group'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;limit: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-        <pubDate>Sun, 30 Aug 2015 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 30 Aug 2015 00:00:00 +0300</pubDate>
         <link>http://emre.xyz/symfony2/widget/2015/08/30/symfony-widget.html</link>
         <guid isPermaLink="true">http://emre.xyz/symfony2/widget/2015/08/30/symfony-widget.html</guid>
       </item>
@@ -483,7 +483,7 @@ g: global - dosyanın heryerinde
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;   sed -i _bak -E &lt;span class=&quot;s1&quot;&gt;'s/echo/print/g'&lt;/span&gt; ~/command.md&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-        <pubDate>Sat, 29 Aug 2015 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 29 Aug 2015 00:00:00 +0300</pubDate>
         <link>http://emre.xyz/ipucu/2015/08/29/sed-ile-bul-ve-degistir-find-and-replace-with-sed.html</link>
         <guid isPermaLink="true">http://emre.xyz/ipucu/2015/08/29/sed-ile-bul-ve-degistir-find-and-replace-with-sed.html</guid>
       </item>
@@ -493,7 +493,7 @@ g: global - dosyanın heryerinde
         <description>&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/BZh0ElwpB09ETT&quot; width=&quot;800&quot; height=&quot;600&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
 &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/AybarsCENGAVER/symfony2-doctrine&quot; title=&quot;Symfony2 &amp;amp; doctrine&quot; target=&quot;_blank&quot;&gt;Symfony2 &amp;amp; doctrine&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/AybarsCENGAVER&quot; target=&quot;_blank&quot;&gt;Aybars CENGAVER&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
 </description>
-        <pubDate>Mon, 20 Apr 2015 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 20 Apr 2015 00:00:00 +0300</pubDate>
         <link>http://emre.xyz/sunum/symfony/doctrine/2015/04/20/symfony-doctrine.html</link>
         <guid isPermaLink="true">http://emre.xyz/sunum/symfony/doctrine/2015/04/20/symfony-doctrine.html</guid>
       </item>
