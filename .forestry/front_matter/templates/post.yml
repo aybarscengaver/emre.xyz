@@ -1,6 +1,4 @@
 ---
-pages:
-- _posts/takip-ettigim-youtube-kanallari.md
 hide_body: false
 fields:
 - type: textarea
@@ -9,12 +7,6 @@ fields:
   label: title
   config:
     required: true
-- type: textarea
-  name: content
-  label: content
-  config:
-    required: true
-    wysiwyg: true
 - type: tag_list
   name: tags
   label: tags
