@@ -3,6 +3,7 @@ title: Takip ettiğim Youtube kanalları
 date: 2017-11-18 18:08:27 +0000
 undefined: ''
 tags: []
+layout: post
 ---
 Sürekli takip ettiğim çok az youtube kanalı var. Genelde youtube önerilerini yada arkadaş önerilerini dikkate alıp videolar izliyorum. Sadece aşağıdaki dört kanalın hiç bir videosunu kaçırmadan izliyorum. Haberi olmayanlar varsa diye paylaşmak istedim.
 
