@@ -3,12 +3,14 @@ pages:
 - _posts/2017-11-18-takip-ettigim-youtube-kanallari.md
 hide_body: false
 fields:
-- type: textarea
 - type: text
   name: title
   label: title
   config:
     required: true
-- type: tag_list
-  name: tags
-  label: tags
+- type: text
+  name: layout
+  label: layout
+  config:
+    required: true
+  hidden: false
