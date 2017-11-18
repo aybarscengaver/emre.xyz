@@ -7,6 +7,39 @@
     <atom:link href="http://emre.xyz/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Takip ettiğim Youtube kanalları</title>
+        <description>&lt;p&gt;Sürekli takip ettiğim çok az youtube kanalı var. Genelde youtube önerilerini yada arkadaş önerilerini dikkate alıp videolar izliyorum. Sadece aşağıdaki dört kanalın hiç bir videosunu kaçırmadan izliyorum. Haberi olmayanlar varsa diye paylaşmak istedim.&lt;/p&gt;
+
+&lt;h4 id=&quot;kurzgesagt--in-a-nutshell&quot;&gt;Kurzgesagt – In a Nutshell&lt;/h4&gt;
+
+&lt;p&gt;5 milyon abonesi olan küresel bir bilim kanalı. Videoları için çok fazla dilde sürekli çeviriler yapılıyor. Animasyon destekli olarak gündem olan, olmayan bilimsel konularda açıklamalar ve farklı bakış açıları sunmaya çalışıyorlar. Bazı videolarını direk konuyla alakalı kurumların desteğiyle yapıyorlar ancak çok aşırı yanlı içerikleri yok.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/user/Kurzgesagt&quot; title=&quot;Kurzgesagt Youtube&quot;&gt;https://www.youtube.com/user/Kurzgesagt&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;stolk&quot;&gt;Stolk&lt;/h4&gt;
+
+&lt;p&gt;740 bin abonesi bulunan Türkiye’nin sayılı komedi-haber kanallarından birisi. Her konuda aşırı ince bir dengede konuşup, hem mesaj verip, hem komedi yapıp, hem başlarına iş açmayan bir kanal.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCvUbNqBKY_uHAfgs-xacGdQ&quot; title=&quot;Stolk Youtube&quot;&gt;https://www.youtube.com/channel/UCvUbNqBKY_uHAfgs-xacGdQ&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;filmler-ve-filimler&quot;&gt;Filmler ve Filimler&lt;/h4&gt;
+
+&lt;p&gt;266 bin aboneli film öneri - komedi kanalı. Ürettikleri parodi şeklindeki film eleştirileriyle eğlenceli bir kanal. Taha-Fox zaten ilgiyle takip ettiğim bir insan, kalkıp ergen kanallarına laf yetiştirip “Onları izliyonuz ama onlar mal zıhahaha” şeklinde çıkışları olmasa daha güzel olacak ancak napalım, onu da öyle sevdik.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCZCUdSjhEFof8_dNn4e9maQ&quot; title=&quot;Filmler ve Filimler Youtube&quot;&gt;https://www.youtube.com/channel/UCZCUdSjhEFof8_dNn4e9maQ&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;altın-elbiseli-adam&quot;&gt;Altın Elbiseli Adam&lt;/h4&gt;
+
+&lt;p&gt;Rahmetli motosiklet üstadımız Barkın Bayoğlu tarafından hazırlanan motosiklet kanalı. Motosiklet sevgisi içte olan birşeydir. Bu sevgiyi boşa harcamamayı öğrendiğim insan Barkın Bayoğlu’dur. Eğitim videoları, tanıtım videoları müthiş bilgiler içerir. Kendine özgü anlatış tarzı ile anlattığı herşeyi hatırlamakla mükellef hissettiriyor. Yani sadece izleyip geçmiyorsunuz gerçekten söylediği söze kulak asıyorsunuz. Tüm kanalı tekrar tekrar izliyorum. Mekanı cennet olsun. Öğrettiği herşey için teşekkürler. Onun sayesinde çok fazla motorcu daha iyi motosiklet kullanıyor.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCef-j9u0IYllBZ955fCfa9A&quot; title=&quot;https://www.youtube.com/channel/UCef-j9u0IYllBZ955fCfa9A&quot;&gt;https://www.youtube.com/channel/UCef-j9u0IYllBZ955fCfa9A&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 18 Nov 2017 18:08:27 +0000</pubDate>
+        <link>http://emre.xyz/2017/11/18/takip-ettigim-youtube-kanallari.html</link>
+        <guid isPermaLink="true">http://emre.xyz/2017/11/18/takip-ettigim-youtube-kanallari.html</guid>
+      </item>
+    
+      <item>
         <title>Symfony 4 ve Flex</title>
         <description>&lt;p&gt;Symfony hakkında yaptığım sunumlarda hep söylediğim gibi, Symfony PHP’nin gelişmesi için her daim çabalamış bir topluluk. Symfony sadece kendisi için birşeyler yapmayıp tüm PHP camiasının faydalanabileceği işler konusunda her zaman bir adım önde giden bir topluluk.&lt;/p&gt;
 
@@ -463,62 +496,6 @@ g: global - dosyanın heryerinde
         <pubDate>Mon, 20 Apr 2015 00:00:00 +0000</pubDate>
         <link>http://emre.xyz/sunum/symfony/doctrine/2015/04/20/symfony-doctrine.html</link>
         <guid isPermaLink="true">http://emre.xyz/sunum/symfony/doctrine/2015/04/20/symfony-doctrine.html</guid>
-      </item>
-    
-      <item>
-        <title>OJS Open Journal Software - Açık Dergi Hizmetleri</title>
-        <description>&lt;p&gt;4 aydır &lt;a href=&quot;http://okulbilisim.com&quot;&gt;OkulBilişim&lt;/a&gt; bünyesinde çalışıyorum. Geliştirdiğimiz
-bir projeden bahsetmek istiyorum. Adından belli olduğu üzere online bir dergi
-yayınlama servisi olan &lt;a href=&quot;http://ojs.io&quot;&gt;Ojs.io&lt;/a&gt; projesinden bahsedeceğim.&lt;/p&gt;
-
-&lt;p&gt;4 Mart 2014  tarihinde başlayan proje şu anda hala geliştirme aşamasında olmasına
-rağmen güzel ilgi gördü. Hızla ilk release’i çıkartmaya çalışıyoruz.&lt;/p&gt;
-
-&lt;h3 id=&quot;nedir&quot;&gt;Nedir?&lt;/h3&gt;
-
-&lt;p&gt;OJS, kurumların, özel şirketlerin veya kişilerin, aylık - haftalık - yıllık
-döngülerde dergilerini yayınlayabilecekleri bir hizmet. OJS’yi farklı kılan şey
-ise inceleme süreci.&lt;/p&gt;
-
-&lt;p&gt;OJS’de önce kurumlar var, bu kurumlara ait dergiler. Derginizi oluşturduğunuzda
-isterseniz hemen içerik oluşturmaya başlayabiliyorsunuz. İsterseniz bir hakem
-heyeti oluşturarak, gönderilen her makalenin belli bir inceleme sürecinden
-geçmesini sağlayabiliyorsunuz. Bu süreç tamamiyle isteğe bağlı olarak güncellenebiliyor.&lt;/p&gt;
-
-&lt;p&gt;Makaleler hakemlerden geçtikten sonra editörlerinize ulaşıyor. Editörleriniz ise
-her adım gibi burada da servis üzerinden yeni bir sayı oluşturarak inceleme sürecini
-tamamlamış makaleleri derginin belirlenmiş bölümlerine ekleyip yayınlayabiliyorlar.&lt;/p&gt;
-
-&lt;p&gt;Bu proje ile tanışana kadar online dergi, hele de bilimsel dergilerin online inceleme
-sürecine fazlasıyla yabancıydım. Hala aşina sayılmam ancak eskisinden daha iyi
-durumda olduğumu düşünüyorum. Bilim dünyasına ne kadar katkı sağlayacağını daha
-iyi anlıyorum en azından.&lt;/p&gt;
-
-&lt;p&gt;### Amaç ?&lt;/p&gt;
-
-&lt;p&gt;OJS’nin temel amacı, bilimsel dergilerin yayınladıkları makalelerin güvenli ve
-doğru süreçleri izleyerek yayınlanması ve bilimsel makale kalitesinin artmasıdır.
-Şu anda halihazırda dergipark üzerinde bulunan PKPOjs’nin geliştirme sürecindeki
-sıkıntıları sebebiyle böyle bir servisi Symfony ile geliştirmek hem kod kalitesini
-fazlasıyla arttırdı, hem de performansı yükseltti.&lt;/p&gt;
-
-&lt;h3 id=&quot;neyle-&quot;&gt;Neyle ?&lt;/h3&gt;
-
-&lt;p&gt;OJS alt yapısında PHP 5.2 kullanır. Bunu da en ideal framework olarak gördüğümüz
-Symfony2.6 ile yapar. Arama kısmında ElasticSearch kullanır, istatistiksel verileri
-MongoDB üzerinde tutar. Veritabanı olarak ise PostgreSQL gibi bir yapıya tutunmuştur.&lt;/p&gt;
-
-&lt;h3 id=&quot;proje&quot;&gt;Proje&lt;/h3&gt;
-
-&lt;p&gt;Dediğim gibi projemiz hala geliştirme aşamasında, ancak incelemek isterseniz
-&lt;a href=&quot;http://github.com/okulbilisim/ojs&quot;&gt;github reposundan&lt;/a&gt; çekip bilgisayarınıza
-kurarak test edebilirsiniz. Aynı repo üzerinden destek olabilirsiniz ve herhangi
-bir hata görürseniz veya bir isteğiniz olursa &lt;a href=&quot;https://github.com/okulbilisim/ojs/issues&quot;&gt;issues&lt;/a&gt;
-kısmından bizimle paylaşabilirsiniz.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
-        <link>http://emre.xyz/genel/2015/04/02/ojs-open-journal-software.html</link>
-        <guid isPermaLink="true">http://emre.xyz/genel/2015/04/02/ojs-open-journal-software.html</guid>
       </item>
     
   </channel>
